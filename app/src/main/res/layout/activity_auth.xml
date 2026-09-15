@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth_screen_bg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/authCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/auth_card_bg"
+        android:elevation="8dp"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/authEyebrowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud Save Enabled"
+            android:textAllCaps="true"
+            android:textColor="@color/auth_gold"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/authTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Welcome Back"
+            android:textColor="@color/auth_text_primary"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/authSubtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue your adventure and keep your captures in sync."
+            android:textColor="@color/auth_text_secondary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp"
+            android:paddingBottom="18dp" />
+
+        <LinearLayout
+            android:id="@+id/authModeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_chip_dark_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/signInTabButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/app_button_light_bg"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/auth_tab_text_active"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signUpTabButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/app_button_secondary_bg"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/auth_tab_text_inactive"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/usernameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auth_input_bg"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="14dp"
+                android:textColor="@color/auth_text_primary"
+                android:textColorHint="@color/auth_text_muted" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/auth_input_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp"
+            android:textColor="@color/auth_text_primary"
+            android:textColorHint="@color/auth_text_muted" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auth_input_bg"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="88dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/auth_text_primary"
+                android:textColorHint="@color/auth_text_muted" />
+
+            <TextView
+                android:id="@+id/togglePasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/auth_toggle_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:minWidth="56dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="Show"
+                android:textAlignment="center"
+                android:textColor="@color/auth_toggle_text"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/confirmPasswordContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auth_input_bg"
+                android:hint="Re-enter password"
+                android:inputType="textPassword"
+                android:paddingStart="18dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="88dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/auth_text_primary"
+                android:textColorHint="@color/auth_text_muted" />
+
+            <TextView
+                android:id="@+id/toggleConfirmPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/auth_toggle_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:minWidth="56dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="Show"
+                android:textAlignment="center"
+                android:textColor="@color/auth_toggle_text"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/primaryAuthButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/app_button_primary_bg"
+            android:minHeight="52dp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/auth_action_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/authHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Use the same email and password you registered with."
+            android:textAlignment="center"
+            android:textColor="@color/auth_text_muted"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/authStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Not signed in"
+            android:textAlignment="center"
+            android:textColor="@color/auth_text_secondary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

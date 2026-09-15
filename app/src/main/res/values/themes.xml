@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ARGameDissertation" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/app_mint</item>
+        <item name="colorOnPrimary">@color/app_mint_dark</item>
+        <item name="colorSecondary">@color/app_gold</item>
+        <item name="colorOnSecondary">@color/app_gold_dark</item>
+        <item name="colorSurface">@color/app_panel_light</item>
+        <item name="colorOnSurface">@color/app_text_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/app_navy_900</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.ARGameDissertation" parent="Base.Theme.ARGameDissertation" />
+</resources>

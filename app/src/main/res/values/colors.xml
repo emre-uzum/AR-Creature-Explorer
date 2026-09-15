@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_navy_900">#0B1E36</color>
+    <color name="app_navy_800">#123154</color>
+    <color name="app_navy_700">#1C4A79</color>
+    <color name="app_sky_400">#68C2FF</color>
+    <color name="app_sky_200">#CFEFFF</color>
+    <color name="app_mint">#6EE0B0</color>
+    <color name="app_mint_dark">#0D2A34</color>
+    <color name="app_gold">#F2C96D</color>
+    <color name="app_gold_dark">#513A0A</color>
+    <color name="app_cream">#F9FCFF</color>
+    <color name="app_cream_dark">#E3EEF7</color>
+    <color name="app_text_dark">#16314C</color>
+    <color name="app_text_mid">#5D7690</color>
+    <color name="app_text_light">#F3F9FF</color>
+    <color name="app_text_muted">#B2CAE3</color>
+    <color name="app_panel_dark">#D9112236</color>
+    <color name="app_panel_dark_stroke">#337AA7D1</color>
+    <color name="app_panel_light">#F7FBFF</color>
+    <color name="app_panel_light_stroke">#D6E5F2</color>
+    <color name="app_input_dark">#1FFFFFFF</color>
+    <color name="app_input_dark_stroke">#3FFFFFFF</color>
+    <color name="app_chip_light">#E7F5FF</color>
+    <color name="app_chip_dark">#2044687F</color>
+    <color name="app_placeholder_top">#8EDC84</color>
+    <color name="app_placeholder_bottom">#45A86A</color>
+
+    <color name="auth_navy">@color/app_navy_900</color>
+    <color name="auth_blue">@color/app_navy_700</color>
+    <color name="auth_sky">@color/app_sky_400</color>
+    <color name="auth_gold">@color/app_gold</color>
+    <color name="auth_card">@color/app_panel_dark</color>
+    <color name="auth_card_stroke">@color/app_panel_dark_stroke</color>
+    <color name="auth_input">@color/app_input_dark</color>
+    <color name="auth_input_stroke">@color/app_input_dark_stroke</color>
+    <color name="auth_text_primary">@color/app_text_light</color>
+    <color name="auth_text_secondary">#D9EAF9</color>
+    <color name="auth_text_muted">@color/app_text_muted</color>
+    <color name="auth_tab_active">@color/app_gold</color>
+    <color name="auth_tab_inactive">#24FFFFFF</color>
+    <color name="auth_tab_text_active">@color/app_gold_dark</color>
+    <color name="auth_tab_text_inactive">@color/app_text_light</color>
+    <color name="auth_action">@color/app_mint</color>
+    <color name="auth_action_text">@color/app_mint_dark</color>
+    <color name="auth_toggle_bg">#26FFFFFF</color>
+    <color name="auth_toggle_text">#FFF6D88F</color>
+
+    <color name="inventory_bg_top">@color/app_sky_400</color>
+    <color name="inventory_bg_bottom">@color/app_sky_200</color>
+    <color name="inventory_card">@color/app_panel_light</color>
+    <color name="inventory_card_stroke">@color/app_panel_light_stroke</color>
+    <color name="inventory_chip">@color/app_chip_light</color>
+    <color name="inventory_text_dark">@color/app_text_dark</color>
+    <color name="inventory_text_mid">@color/app_text_mid</color>
+    <color name="inventory_placeholder_top">@color/app_placeholder_top</color>
+    <color name="inventory_placeholder_bottom">@color/app_placeholder_bottom</color>
+
+</resources>

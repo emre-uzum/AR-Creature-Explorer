@@ -1,0 +1,35 @@
+# Android Studio and IntelliJ IDEA
+.idea/
+*.iml
+
+# Gradle and build output
+.gradle/
+build/
+**/build/
+
+# Local SDK paths and API keys
+local.properties
+
+# Firebase project configuration
+app/google-services.json
+
+# Native build output
+.externalNativeBuild/
+.cxx/
+
+# Generated captures and packaged applications
+captures/
+*.apk
+*.aab
+
+# Signing material
+*.jks
+*.keystore
+keystore.properties
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
